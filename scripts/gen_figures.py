@@ -5,7 +5,7 @@ import matplotlib.patches as mpatches
 from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 import os
 
-OUT = r'C:\Users\a3034\Desktop\DL_Final\grullr_stock\slide_output\figures'
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'slide_output', 'figures')
 os.makedirs(OUT, exist_ok=True)
 
 COLORS = {

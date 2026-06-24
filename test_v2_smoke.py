@@ -1,5 +1,5 @@
-import sys
-sys.path.insert(0, r'C:\Users\a3034\Desktop\DL_Final\grullr_stock')
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import numpy as np
 from training.train_ppo import _load_stock_data
 from rl_env.trading_env import MultiStockTradingEnv

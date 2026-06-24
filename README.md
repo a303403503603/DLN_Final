@@ -247,7 +247,7 @@ execute_proposal:
 
 ### 6.2 重新註冊
 ```cmd
-cd C:\Users\a3034\Desktop\DL_Final\grullr_stock\pipeline
+cd <repo_root>\pipeline
 setup_schedule.bat   # (需 Admin 權限)
 ```
 
@@ -256,7 +256,7 @@ setup_schedule.bat   # (需 Admin 權限)
 # 啟動
 Start-Process "C:\ProgramData\anaconda3\envs\dl_final\pythonw.exe" `
   -ArgumentList "-u","-m","pipeline.discord_bot" `
-  -WorkingDirectory "C:\Users\a3034\Desktop\DL_Final\grullr_stock"
+  -WorkingDirectory "<repo_root>"
 
 # 停止
 Stop-Process -Name pythonw -Force

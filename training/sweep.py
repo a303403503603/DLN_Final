@@ -25,7 +25,7 @@ CONFIGS = [
 
 EPISODES = 30
 PYTHON = sys.executable
-WORKDIR = r"C:\Users\a3034\Desktop\DL_Final\grullr_stock"
+WORKDIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def parse_final_metrics(log_text):
