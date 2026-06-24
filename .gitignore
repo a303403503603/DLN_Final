@@ -1,0 +1,29 @@
+# Environment variables (contains secrets)
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Model checkpoints
+checkpoints/*.pth
+
+# Data — Kaggle stock CSVs and API cache (can be regenerated)
+data/price_data/
+data/api_cache/
+data/taiwan_stock_price.csv
+
+# GRU cache — 1942 .npy features (can be regenerated)
+gru_cache/
+
+# Logs — contains trade history, portfolio state, API holdings
+logs/
+
+# Slide output — generated report content
+slide_output/
+
+# Test files
+_test.npy
+
+# Batch simulation results
+results/
